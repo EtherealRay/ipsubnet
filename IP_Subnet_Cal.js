@@ -183,7 +183,7 @@ function possible_network(ip, subnet, num_host) {
   head.className = "panel-heading";
   var start_IP = find_start_IP(ip, subnet, 0);
   var start_IP_star = find_start_IP(ip, subnet, "*");
-  head.appendChild(document.createTextNode("All possible /" + subnet + " Networks" + start_IP_star));
+  head.appendChild(document.createTextNode("All possible Networks"));
   div_table_3.appendChild(head);
   div_table_3.appendChild(document.createElement("hr"));
   var tr = document.createElement("tr");
