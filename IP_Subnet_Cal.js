@@ -36,7 +36,7 @@ function createChoice(end) {
   while (select.firstChild) {
     select.removeChild(select.firstChild);
   }
-  for (var start = 32; start >= end; start--) {
+  for (var start = 1; start <= 32; start++) {
     var option = document.createElement("option");
     option.value = start;
     var ip = find_IP(start);
