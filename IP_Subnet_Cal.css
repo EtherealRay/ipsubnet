@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #686460;
+  background: #504f4f;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
 }
@@ -71,12 +71,12 @@ option:checked:hover, select:focus option:checked:hover {
 
 .button.-regular {
   color: #202129;
-  background-color: #d6d4d4;
+  background-color: #f3c9c9;
 }
 
 .button.-regular:hover {
-  color: #202129;
-  background-color: #e1e2e2;
+  color: #ff0000;
+  background-color: #000000;
   opacity: 1;
 }
 
