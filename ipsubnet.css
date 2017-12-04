@@ -95,8 +95,8 @@ option:checked:hover, select:focus option:checked:hover {
 .panel {
   font-family:monospace;
   text-align: center;
-
-
+  margin-left: 80%;
+  margin-right: 80%;
   background-color: #ead0d0;
   border: 1.5px solid transparent;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
