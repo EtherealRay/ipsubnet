@@ -1,4 +1,5 @@
 html {
+  font-family:monospace;
   font-size: 15px;
   box-sizing: border-box;
 }
@@ -16,13 +17,15 @@ input {
 }
 
 input[type="text"] {
-  width: 100%;
+  font-family:monospace;
+  width: auto;
   border: 1px solid #a28585;
   text-align: center;
   border-radius:100px;
 }
 
 table {
+  font-family:monospace;
   width: 100%;
 }
 
@@ -31,6 +34,7 @@ tr {
 }
 
 td {
+  font-family:monospace;
   margin-bottom: auto;
   align: middle;
   vertical-align: inherit;
@@ -41,9 +45,10 @@ td {
 select {
   font-family:monospace;
   font-size:large;
-  width: 100%;
+  width: auto;
+  text-align: center;
   border-radius: 500px;
-  background-color: #c7c7c7;
+  background-color: #ffffff;
   font-size: large;
 }
 
@@ -52,9 +57,9 @@ option:checked:hover, select:focus option:checked:hover {
 }
 
 .button {
+  font-family:monospace;
   overflow: hidden;
   padding: 12px 12px;
-  cursor: pointer;
   transition: all 150ms linear;
   text-align: center;
   border: 0 none;
@@ -73,7 +78,7 @@ option:checked:hover, select:focus option:checked:hover {
 
 .button.-regular {
   color: #202129;
-  background-color: #f3c9c9;
+  background-color: #ffffff;
 }
 
 .button.-regular:hover {
@@ -83,22 +88,24 @@ option:checked:hover, select:focus option:checked:hover {
 }
 
 .button.-regular:active {
-  background-color: #d5d6d6;
+  background-color: #6f7a7a;
   opacity: 1;
 }
 
 .panel {
+  font-family:monospace;
   text-align: center;
   margin-left: 20%;
   margin-right: 20%;
 
-  background-color: #fff;
+  background-color: #ead0d0;
   border: 1.5px solid transparent;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
 }
 
 .panel-body {
+  font-family:monospace;
   padding-left: 30px;
   padding-right: 10px;
   text-align: center;
@@ -113,21 +120,25 @@ p {
 }
 
 #Topic {
+  font-family:monospace;
   text-align: center;
   font-size: 23px;
 }
 
 #Topic-2 {
+  font-family:monospace;
   text-align: center;
   font-size: 18px;
 }
 
 #table-1-L {
+  font-family:monospace;
   width: 45%;
   float: left;
 }
 
 #table-1-R {
+  font-family:monospace;
   width: 50%;
   float: left;
   text-align: left;
@@ -190,9 +201,11 @@ p {
 
 @media (max-width:555px) {
   #table-1-L {
+    font-family:monospace;
     width: 100%;
   }
   #table-1-R {
+    font-family:monospace;
     width: 100%;
     text-align: center;
   }

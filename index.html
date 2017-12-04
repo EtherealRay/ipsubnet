@@ -14,19 +14,23 @@
 
 
   <div class="panel panel-default">
-    <p class="panel-heading" id="Topic">IP Calculator</p>
-    <hr >
     <table class="panel-body">
       <form id="form_network_class" action="javascript:change_subnet();">
         <tr>
           <td id="table-1-L">
             NETWORK CLASS
+            
           </td>
+      
           <td id="table-1-R">
+            <input name="network_class" type="radio" value="A" onclick="this.form.submit();" > A
+            <br>
+            <input name="network_class" type="radio" value="B" onclick="this.form.submit();" > B
+            <br>
+            <input name="network_class" type="radio" value="C" onclick="this.form.submit();" > C
+            <br>
             <input name="network_class" type="radio" value="any" onclick="this.form.submit();" checked> ANY
-            <input name="network_class" type="radio" value="A" onclick="this.form.submit();" style="margin-left:10px"> A
-            <input name="network_class" type="radio" value="B" onclick="this.form.submit();" style="margin-left:10px"> B
-            <input name="network_class" type="radio" value="C" onclick="this.form.submit();" style="margin-left:10px"> C
+            <hr>
           </td>
         </tr>
       </form>
@@ -39,6 +43,7 @@
             <select class="decorated"name="subnet" id="subnet" >
               <script> javascript:createChoice(1); </script>
             </select>
+            <hr>
           </td>
         </tr>
         <tr>
@@ -47,20 +52,23 @@
           </td>
           <td id="table-1-R">
             <input id="IP_Address" type="text" value="133.33.33.37" pattern="(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)">
+            <hr>
           </td>
+          
         </tr>
-        <tr><td><button type="submit" class='button -regular'> CALCULATE </button><td></tr>
+        <tr><td><button type="submit" class='button -regular'> CALCULATE IP ADDRESS</button><td></tr>
       </form>
     </table>
   </div>
-
+  <hr>
   <div class="row" id="result">
       <div id="div-table-2" class="panel panel-default">
+
         <p id="Topic-2" class="panel-heading">Result</p>
         <hr><table id="table-2" class="panel-body"><tr>
           <th id="table-2-L">IP Address</th>
           <td id="table-2-R"></td></tr><tr><th id="table-2-L">Network Address</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Usable Host IP Range</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Broadcast Address</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Total Number of Hosts</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Number of Usable Hosts</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Subnet Mask</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Wildcard Mask</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Binary Subnet Mask</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">IP Class</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">CIDR Notation</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">IP Type</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Short</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Binary ID</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Integer ID</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">Hex ID</th><td id="table-2-R"></td></tr><tr><th id="table-2-L">in-addr.arpa</th><td id="table-2-R"></td></tr></table></div>
-  
+          <hr>
           <div id="div-table-3" class="panel panel-default"><p id="Topic-2" class="panel-heading">All possible Networks</p><hr><table id="table-3" class="panel-body"><tr><th id="table-3-L">Network Address</th><th id="table-3-M">Usable Host Range</th><th id="table-3-R">Broadcast Address</th></tr></div>
     </div>
   </div>
